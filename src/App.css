@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.candies-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.candies {
+  background-color: rgb(163, 7, 7);
+  color: black;
+  padding: 10px;
+  margin: 20px;
+  width: 150px;
+}

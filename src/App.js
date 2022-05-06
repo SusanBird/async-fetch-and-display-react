@@ -3,6 +3,7 @@ import './App.css';
 import { useEffect } from 'react';
 import { getCandies } from './services/fetch-utils';
 import { useState } from 'react';
+import CandiesList from './CandiesList';
 
 
 // import your arrays here
@@ -21,16 +22,10 @@ function App() {
 
   return (
     <div className="App">
-      <div className='candies-list'>
-        {candies.map(candy =>
-          <div className='candies' key={candy.name + candy.pieces + candy.texture + candy.color}>
-            <p>{candy.name}</p>
-            <p>{candy.pieces}</p>
-            <p>{candy.texture}</p>
-            <p>{candy.color}</p>
-          </div>
-        )}
-      </div>
+      {
+        <CandiesList candies={candies} />
+      }
+    
     </div>
   );
 }
