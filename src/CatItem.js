@@ -1,8 +1,14 @@
 import React from 'react';
 
-export default function CatItem() {
+export default function CatItem({ cat }) {
+
   return (
-    <div>CatItem</div>
+    <div className='cat-item'>
+      <p>{cat.name}</p>
+      <p>Color: {cat.color}</p>
+      <p>Age: {cat.age}</p>
+      <p>Legs: {cat.legs}</p>
+    </div>
   );
 }
 

@@ -43,7 +43,19 @@
 }
 
 .candy-item {
-  background-color: rgb(163, 7, 7);
+  background-color: rgb(38, 2, 2);
+  color: white;
+  padding: 10px;
+  margin: 20px;
+  width: 150px;
+}
+
+.cats-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cat-item {
+  background-color: rgb(163, 7, 153);
   color: black;
   padding: 10px;
   margin: 20px;
