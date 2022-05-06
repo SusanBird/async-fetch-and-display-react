@@ -15,3 +15,19 @@ export async function getCats() {
 
   return response.body;
 }
+
+export async function getVehicles() {
+  const response = await client
+    .from('vehicles')
+    .select('*');
+  
+  return response.body;
+}
+
+export async function getSports() {
+  const response = await client
+    .from('sports')
+    .select('*');
+    
+  return response.body;
+}

@@ -6,7 +6,7 @@ export default function CatsList({ cats }) {
     <div className='cats-list'>
       {cats.map((cat, i) =>
         <CatItem key={cat + i} cat={cat} />   
-      )}
+      )}{''}
     </div>
   );
 }
