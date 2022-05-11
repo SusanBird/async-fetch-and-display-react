@@ -31,3 +31,5 @@ export async function getSports() {
     
   return response.body;
 }
+
+//netlify
